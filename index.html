@@ -565,11 +565,9 @@
             left: 50%;
             transform: translateX(-50%);
             
-            /* Base per tutti i tooltip */
             backdrop-filter: blur(8px) saturate(150%);
             -webkit-backdrop-filter: blur(8px) saturate(150%);
             
-            /* Bordo dorato */
             border: 2px solid rgba(255, 215, 0, 0.9);
             border-radius: 12px;
             box-shadow: 
@@ -577,7 +575,6 @@
                 inset 0 1px 0 rgba(255, 255, 255, 0.2),
                 0 0 20px rgba(255, 215, 0, 0.3);
             
-            /* Testo con ombra per leggibilità */
             color: white;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
             padding: 10px 14px;
@@ -589,14 +586,12 @@
             min-width: 140px;
             max-width: 180px;
             
-            /* Animazione */
             opacity: 0;
             pointer-events: none;
             z-index: 1500;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* Tooltip su Contrasto Vincente - VERDE */
         .contrasto-vincente .card-tooltip {
             background: linear-gradient(135deg, 
                 rgba(76, 175, 80, 0.85), 
@@ -604,7 +599,6 @@
             );
         }
 
-        /* Tooltip su Contrasto Perdente - GRIGIO */
         .contrasto-perdente .card-tooltip {
             background: linear-gradient(135deg, 
                 rgba(158, 158, 158, 0.85), 
@@ -612,7 +606,6 @@
             );
         }
 
-        /* Tooltip su Fallo Rigore - ROSSO */
         .fallo-rigore .card-tooltip {
             background: linear-gradient(135deg, 
                 rgba(244, 67, 54, 0.85), 
@@ -620,7 +613,6 @@
             );
         }
 
-        /* Tooltip su Contropiede - VERDE CHIARO */
         .contropiede .card-tooltip {
             background: linear-gradient(135deg, 
                 rgba(139, 195, 74, 0.85), 
@@ -628,7 +620,6 @@
             );
         }
 
-        /* Tooltip su Parata - BLU */
         .parata .card-tooltip {
             background: linear-gradient(135deg, 
                 rgba(33, 150, 243, 0.85), 
@@ -636,7 +627,6 @@
             );
         }
 
-        /* Tooltip su Fallo Tattico - GIALLO */
         .fallo-tattico .card-tooltip {
             background: linear-gradient(135deg, 
                 rgba(251, 192, 45, 0.85), 
@@ -644,7 +634,6 @@
             );
         }
 
-        /* Tooltip su Fallo Laterale - ARANCIONE */
         .fallo-laterale .card-tooltip {
             background: linear-gradient(135deg, 
                 rgba(255, 152, 0, 0.85), 
@@ -652,7 +641,6 @@
             );
         }
 
-        /* Tooltip su Calcio Angolo - CIANO */
         .calcio-angolo .card-tooltip {
             background: linear-gradient(135deg, 
                 rgba(0, 188, 212, 0.85), 
@@ -660,7 +648,6 @@
             );
         }
 
-        /* Tooltip su Fuorigioco - VIOLA */
         .fuorigioco .card-tooltip {
             background: linear-gradient(135deg, 
                 rgba(103, 58, 183, 0.85), 
@@ -668,7 +655,6 @@
             );
         }
 
-        /* Tooltip su Sostituzione - GRIGIO BLU */
         .sostituzione .card-tooltip {
             background: linear-gradient(135deg, 
                 rgba(96, 125, 139, 0.85), 
@@ -843,11 +829,9 @@
         }
 
         .keyboard-btn {
-            /* Dimensioni: 1.5× larghezza, stessa altezza carta */
             width: clamp(67.5px, 7.5vw, 112.5px);
             height: clamp(66px, 7.3vw, 110px);
             
-            /* Layout */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -855,13 +839,11 @@
             gap: 4px;
             padding: 8px;
             
-            /* Stile semplice - NO effetto 3D */
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border: 2px solid rgba(255, 255, 255, 0.4);
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             
-            /* Testo */
             color: white;
             font-weight: bold;
             font-size: clamp(0.5em, 0.6em, 0.7em);
@@ -869,7 +851,6 @@
             line-height: 1.1;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             
-            /* Interazione */
             cursor: pointer;
             transition: all 0.3s ease;
             user-select: none;
@@ -1043,7 +1024,6 @@
             font-size: 1.5em;
         }
 
-        /* Rules Modal */
         .rules-modal-content {
             background: white;
             border-radius: 12px;
@@ -1346,66 +1326,19 @@
     <div class="modal" id="rulesModal">
         <button class="rules-modal-close" onclick="closeRulesModal()">✕</button>
         <div class="rules-modal-content" id="rulesContent">
-            <!-- Regolamento completo -->
             <div style="background: linear-gradient(135deg, #2d7a3f 0%, #1e5a2f 100%); color: white; padding: 40px 30px; text-align: center;">
                 <h1 style="font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">⚽ SOCCER CARD GAMES ⚽</h1>
                 <p style="font-size: 1.2em; opacity: 0.9;">Il gioco di carte che trasforma ogni partita in un'avventura strategica!</p>
             </div>
 
             <div style="padding: 40px 30px; max-width: 900px; margin: 0 auto;">
-                <!-- INTRODUZIONE -->
                 <div style="margin-bottom: 40px; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 15px; border-left: 5px solid #2d7a3f; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                     <h2 style="font-size: 1.8em; color: #2d7a3f; margin-bottom: 15px;">🎯 Benvenuto nel Gioco!</h2>
                     <p style="margin-bottom: 15px; font-size: 1.05em;">
-                        <strong style="color: #2d7a3f;">Soccer Card Games</strong> è un emozionante gioco di carte per due giocatori che ricrea l'adrenalina di una vera partita di calcio! Ogni giocatore gestisce la propria squadra attraverso carte che rappresentano giocatori in campo e azioni difensive. Strategia, astuzia e un pizzico di fortuna ti porteranno alla vittoria!
-                    </p>
-                    <p style="margin-bottom: 15px; font-size: 1.05em;">
-                        L'obiettivo è semplice: <strong style="color: #2d7a3f;">segnare più goal dell'avversario</strong> completando sequenze di carte attacco e difendendoti dalle mosse dell'avversario. Ogni partita è divisa in due tempi, proprio come nel calcio vero!
+                        <strong style="color: #2d7a3f;">Soccer Card Games</strong> è un emozionante gioco di carte per due giocatori che ricrea l'adrenalina di una vera partita di calcio!
                     </p>
                 </div>
 
-                <!-- SETUP -->
-                <div style="margin-bottom: 40px; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 15px; border-left: 5px solid #2d7a3f; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                    <h2 style="font-size: 1.8em; color: #2d7a3f; margin-bottom: 15px;">🎴 Preparazione della Partita</h2>
-                    <p style="margin-bottom: 15px; font-size: 1.05em;">Prima di iniziare a giocare, dovete preparare il campo di battaglia:</p>
-                    <ul style="margin-left: 20px; margin-bottom: 15px;">
-                        <li style="margin-bottom: 10px; font-size: 1.05em;"><strong style="color: #2d7a3f;">Scegliete i nomi delle squadre:</strong> Date un'identità alla vostra squadra! Inter, Milan, o qualunque nome vi ispiri.</li>
-                        <li style="margin-bottom: 10px; font-size: 1.05em;"><strong style="color: #2d7a3f;">Distribuzione carte:</strong> Ogni giocatore riceve 21 carte dal mazzo: 15 carte giocatore e 6 carte difesa/speciali.</li>
-                        <li style="margin-bottom: 10px; font-size: 1.05em;"><strong style="color: #2d7a3f;">Mazzo pescate:</strong> Le carte rimanenti formano il mazzo da cui pescare durante la partita.</li>
-                        <li style="margin-bottom: 10px; font-size: 1.05em;"><strong style="color: #2d7a3f;">Chi inizia:</strong> Si decide casualmente quale squadra attacca per prima.</li>
-                    </ul>
-                    <div style="background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%); border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0; border-radius: 8px;">
-                        <strong>💡 Suggerimento:</strong> La scelta di quando usare le carte difesa e quando pescare nuove carte può cambiare completamente le sorti della partita!
-                    </div>
-                </div>
-
-                <!-- COME GIOCARE -->
-                <div style="margin-bottom: 40px; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 15px; border-left: 5px solid #2d7a3f; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                    <h2 style="font-size: 1.8em; color: #2d7a3f; margin-bottom: 15px;">⚡ Come Si Gioca</h2>
-                    <p style="margin-bottom: 15px; font-size: 1.05em;">Una partita si svolge a <strong style="color: #2d7a3f;">turni alternati</strong> tra attacco e difesa.</p>
-                    
-                    <h3 style="color: #2d7a3f; margin-top: 20px; margin-bottom: 10px;">🎯 Fase di Attacco</h3>
-                    <p style="margin-bottom: 10px; font-size: 1.05em;">L'attaccante deve giocare una sequenza di 4 carte seguendo quest'ordine:</p>
-                    <ol style="margin-left: 20px; font-size: 1.05em; margin-bottom: 15px;">
-                        <li><strong style="color: #2d7a3f;">DIFENSORE</strong> (prima carta)</li>
-                        <li><strong style="color: #2d7a3f;">MEDIANO</strong> (seconda carta)</li>
-                        <li><strong style="color: #2d7a3f;">CENTROCAMPISTA</strong> (terza carta)</li>
-                        <li><strong style="color: #2d7a3f;">ATTACCANTE</strong> (quarta carta - per segnare!)</li>
-                    </ol>
-                    <div style="background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%); border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; border-radius: 8px;">
-                        <strong>⚠️ Regola importante:</strong> Devi rispettare le posizioni! Se giochi Destro, il successivo può essere Centrale o Destro. Se giochi Centrale, puoi andare ovunque. Sinistro può andare a Centrale o Sinistro.
-                    </div>
-                    <p style="margin-top: 15px; font-size: 1.05em;"><strong style="color: #2d7a3f;">Non hai la carta giusta?</strong> Puoi pescare una carta dal mazzo (una sola volta per azione).</p>
-                    
-                    <h3 style="color: #2d7a3f; margin-top: 25px; margin-bottom: 10px;">🛡️ Fase di Difesa</h3>
-                    <p style="margin-bottom: 10px; font-size: 1.05em;">Il difensore può:</p>
-                    <ul style="margin-left: 20px;">
-                        <li style="margin-bottom: 10px; font-size: 1.05em;">Giocare una carta difesa per contrastare</li>
-                        <li style="margin-bottom: 10px; font-size: 1.05em;">Lasciare proseguire senza giocare</li>
-                    </ul>
-                </div>
-
-                <!-- CARTE DIFESA -->
                 <div style="margin-bottom: 40px; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 15px; border-left: 5px solid #2d7a3f; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                     <h2 style="font-size: 1.8em; color: #2d7a3f; margin-bottom: 15px;">🛡️ Carte Difesa</h2>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px;">
@@ -1414,62 +1347,14 @@
                             <p style="font-size: 0.95em;">Ferma l'azione e recuperi palla! Riparti da difensore.</p>
                         </div>
                         <div style="background: white; padding: 15px; border-radius: 10px; border: 2px solid #e9ecef; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <div style="font-weight: bold; color: #2d7a3f; margin-bottom: 8px;">❌ Contrasto Perdente</div>
-                            <p style="font-size: 0.95em;">L'azione prosegue, ma peschi 1 carta.</p>
-                        </div>
-                        <div style="background: white; padding: 15px; border-radius: 10px; border: 2px solid #e9ecef; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <div style="font-weight: bold; color: #2d7a3f; margin-bottom: 8px;">⚡ Contropiede</div>
-                            <p style="font-size: 0.95em;">Fermi l'azione mantenendo la posizione! Riparti dal ruolo attuale.</p>
-                        </div>
-                        <div style="background: white; padding: 15px; border-radius: 10px; border: 2px solid #e9ecef; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <div style="font-weight: bold; color: #2d7a3f; margin-bottom: 8px;">🧤 Parata</div>
-                            <p style="font-size: 0.95em;">Solo su attaccante. Annulla il goal!</p>
-                        </div>
-                        <div style="background: white; padding: 15px; border-radius: 10px; border: 2px solid #e9ecef; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <div style="font-weight: bold; color: #2d7a3f; margin-bottom: 8px;">🚫 Fuorigioco</div>
-                            <p style="font-size: 0.95em;">Solo su attaccante. Annulla l'azione!</p>
-                        </div>
-                        <div style="background: white; padding: 15px; border-radius: 10px; border: 2px solid #e9ecef; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <div style="font-weight: bold; color: #2d7a3f; margin-bottom: 8px;">🟨 Fallo Tattico</div>
-                            <p style="font-size: 0.95em;">L'azione prosegue, peschi 1 carta.</p>
-                        </div>
-                        <div style="background: white; padding: 15px; border-radius: 10px; border: 2px solid #e9ecef; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <div style="font-weight: bold; color: #2d7a3f; margin-bottom: 8px;">↩️ Fallo Laterale</div>
-                            <p style="font-size: 0.95em;">Solo su laterali. L'attaccante rigioca la stessa carta.</p>
-                        </div>
-                        <div style="background: white; padding: 15px; border-radius: 10px; border: 2px solid #e9ecef; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <div style="font-weight: bold; color: #2d7a3f; margin-bottom: 8px;">🚩 Calcio d'Angolo</div>
-                            <p style="font-size: 0.95em;">Solo su attaccante laterale. Rigioca attaccante.</p>
-                        </div>
-                        <div style="background: white; padding: 15px; border-radius: 10px; border: 2px solid #e9ecef; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <div style="font-weight: bold; color: #2d7a3f; margin-bottom: 8px;">🔴 Fallo da Rigore</div>
-                            <p style="font-size: 0.95em;">Solo su attaccante. Assegna un rigore!</p>
-                        </div>
-                        <div style="background: white; padding: 15px; border-radius: 10px; border: 2px solid #e9ecef; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                            <div style="font-weight: bold; color: #2d7a3f; margin-bottom: 8px;">🔄 Sostituzione</div>
-                            <p style="font-size: 0.95em;">L'azione prosegue, peschi 1 carta.</p>
+                            <div style="font-weight: bold; color: #2d7a3f; margin-bottom: 8px;">📹 VAR</div>
+                            <p style="font-size: 0.95em;">Solo dopo un goal. Annulla il goal appena segnato!</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- CARTE SPECIALI -->
-                <div style="margin-bottom: 40px; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 15px; border-left: 5px solid #2d7a3f; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                    <h2 style="font-size: 1.8em; color: #2d7a3f; margin-bottom: 15px;">✨ Carte Speciali</h2>
-                    <p style="margin-bottom: 10px; font-size: 1.05em;"><strong style="color: #2d7a3f;">🃏 JOLLY:</strong> Sostituisce qualsiasi carta in attacco, oppure ferma l'azione in difesa.</p>
-                    <p style="font-size: 1.05em;"><strong style="color: #2d7a3f;">📹 VAR:</strong> Solo dopo un goal. Annulla il goal appena segnato!</p>
-                </div>
-
-                <!-- VITTORIA -->
-                <div style="margin-bottom: 40px; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 15px; border-left: 5px solid #2d7a3f; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                    <h2 style="font-size: 1.8em; color: #2d7a3f; margin-bottom: 15px;">🏆 Vincere</h2>
-                    <p style="margin-bottom: 15px; font-size: 1.05em;"><strong style="color: #2d7a3f;">Goal:</strong> Completa la sequenza di 4 carte senza essere fermato!</p>
-                    <p style="margin-bottom: 15px; font-size: 1.05em;"><strong style="color: #2d7a3f;">Due tempi:</strong> La partita è divisa in primo e secondo tempo.</p>
-                    <p style="font-size: 1.05em;"><strong style="color: #2d7a3f;">Vittoria:</strong> Chi segna più goal vince!</p>
-                </div>
-
                 <div style="background: #2d7a3f; color: white; padding: 30px; text-align: center; border-radius: 15px; margin-top: 40px;">
                     <h3 style="font-size: 1.8em; margin-bottom: 15px;">⚽ Buona Partita! ⚽</h3>
-                    <p>Che vinca il migliore strateghi del calcio su carte!</p>
                 </div>
             </div>
         </div>
@@ -1593,9 +1478,6 @@
         let setupPhase = 1;
 
         const FIELD_POSITIONS = {
-            // Coordinate in pixel nel viewBox SVG (700x350)
-            // Campo verde: x=20-680, y=50-300
-            // Margini sicuri per le carte
             'difensore-Sx': { x: 80, y: 90 },
             'difensore-Cc': { x: 80, y: 175 },
             'difensore-Dx': { x: 80, y: 260 },
@@ -2143,9 +2025,12 @@
             const fieldCards = document.getElementById('fieldCards');
             fieldCards.innerHTML = '';
             
-            // Pulisci bottone attacco precedente
             const attackActionBtn = document.getElementById('attackActionButton');
             if (attackActionBtn) attackActionBtn.innerHTML = '';
+            
+            // Pulisci attackHand
+            const attackHandEl = document.getElementById('attackHand');
+            if (attackHandEl) attackHandEl.innerHTML = '';
             
             gameState.playedCardsOnField.forEach(played => {
                 createCardOnField(played.tipo, played.pos, true);
@@ -2238,7 +2123,6 @@
                 const currentRole = roles[gameState.step];
                 const attackerName = gameState.firstAttacker === 'red' ? gameState.redTeamName : gameState.blueTeamName;
                 
-                // Aggiorna messaggio
                 document.getElementById('actionStatus').innerHTML = `
                     <div style="background: rgba(255, 152, 0, 0.95); color: white; padding: 8px 16px; border-radius: 8px; font-weight: bold;">
                         🎴 ${attackerName} deve pescare!<br>
@@ -2246,7 +2130,6 @@
                     </div>
                 `;
                 
-                // BOTTONE nell'area attacco
                 if (attackActionBtn) {
                     attackActionBtn.innerHTML = `
                         <button class="keyboard-btn" onclick="pescaCartaGiocatore('attack')">
@@ -2257,6 +2140,19 @@
                 }
             } else if (!hasPlayable && (mazzoPescate.length === 0 || gameState.hasDrawnThisAction)) {
                 checkEndOfHalf();
+            }
+            
+            // MOSTRA JOLLY IN ATTACCO se disponibile e in attack-turn
+            if (gameState.phase === 'attack-turn' && attackHandRemaining.some(c => c.tipo === 'jolly')) {
+                const attackHandEl = document.getElementById('attackHand');
+                if (attackHandEl) {
+                    attackHandEl.innerHTML = `
+                        <div class="carta jolly playable" onclick="playJollyAttack()" style="cursor: pointer;">
+                            <div class="carta-icona">🃏</div>
+                            <div class="carta-nome">JOLLY</div>
+                        </div>
+                    `;
+                }
             }
         }
 
@@ -2290,7 +2186,6 @@
             
             if (!lastPosition) return;
             
-            // Converti coordinate SVG in percentuali e aggiungi offset
             const leftPercent = (lastPosition.x / 700) * 100 + 3;
             const topPercent = (lastPosition.y / 350) * 100 - 3;
             
@@ -2340,7 +2235,6 @@
             cardDiv.className = 'field-position';
             cardDiv.style.position = 'absolute';
             
-            // Converti coordinate SVG in percentuali responsive
             const leftPercent = (position.x / 700) * 100;
             const topPercent = (position.y / 350) * 100;
             
@@ -2421,7 +2315,6 @@
             const canPlayFalloLaterale = isDefenseCardPlayable('fallo-laterale');
             const canPlayCalcioAngolo = isDefenseCardPlayable('calcio-angolo');
             
-            // Testi tooltip per TUTTE le carte
             const tooltips = {
                 'contrasto-vincente': '🛡️ FERMA L\'AZIONE\n• Cambio possesso\n• Riparti da difensore',
                 'contrasto-perdente': '⚔️ AZIONE PROSEGUE\n• Peschi 1 carta',
@@ -2510,6 +2403,14 @@
                         <div class="carta-nome">FALLO DA RIGORE</div>
                     </div>`;
                 }
+            }
+            
+            // MOSTRA JOLLY IN DIFESA se disponibile
+            if (hand.some(c => c.tipo === 'jolly')) {
+                html += `<div class="carta jolly playable" onclick="playJollyDefense()" style="position: relative; cursor: pointer;">
+                    <div class="carta-icona">🃏</div>
+                    <div class="carta-nome">JOLLY</div>
+                </div>`;
             }
             
             html += '<button class="keyboard-btn" onclick="skipDefense()"><span style="font-size: 1.3em;">⚡</span><span style="font-size: clamp(10px, 1vw, 15px); line-height: 1.1;">PROSEGUI</span></button>';
@@ -2728,8 +2629,8 @@
                 `;
                 
                 setTimeout(() => {
-                    const defenderHand = defenseHandRemaining;
-                    const hasVAR = defenderHand.some(c => c.tipo === 'var');
+                    // FIX VAR: Controlla sempre defenseHandRemaining
+                    const hasVAR = defenseHandRemaining.some(c => c.tipo === 'var');
                     
                     if (hasVAR) {
                         showVARDecision();
@@ -2840,8 +2741,8 @@
             }
             
             setTimeout(() => {
-                const defenderHand = gameState.firstAttacker === 'red' ? defenseHandRemaining : attackHandRemaining;
-                const hasVAR = defenderHand.some(c => c.tipo === 'var');
+                // FIX VAR: Controlla sempre defenseHandRemaining
+                const hasVAR = defenseHandRemaining.some(c => c.tipo === 'var');
                 
                 if (hasVAR) {
                     showVARDecision();
@@ -2887,8 +2788,8 @@
             document.getElementById('redScore').textContent = gameState.redScore;
             document.getElementById('blueScore').textContent = gameState.blueScore;
             
-            const isRedDefending = gameState.firstAttacker === 'blue';
-            removeCardFromHand(isRedDefending ? 'attack' : 'defense', 'var');
+            // FIX VAR: Rimuovi sempre da defense
+            removeCardFromHand('defense', 'var');
             
             const defenderName = gameState.firstAttacker === 'red' ? gameState.blueTeamName : gameState.redTeamName;
             document.getElementById('actionStatus').innerHTML = `
@@ -3082,7 +2983,6 @@
             
             gameState.firstAttacker = gameState.firstAttacker === 'red' ? 'blue' : 'red';
             
-            // Scambia le mani tra i giocatori
             [attackHandRemaining, defenseHandRemaining] = [defenseHandRemaining, attackHandRemaining];
             
             updateSidebarTitles();
@@ -3126,7 +3026,6 @@
         function invertRoles() {
             gameState.firstAttacker = gameState.firstAttacker === 'red' ? 'blue' : 'red';
             
-            // Scambia le mani tra i giocatori
             [attackHandRemaining, defenseHandRemaining] = [defenseHandRemaining, attackHandRemaining];
             
             updateSidebarTitles();
